@@ -1,0 +1,116 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/cosmo/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Navi</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-logo" href="#"><img src="http://cdn.connected2.me/img/n/logo_header.png" class="img-responsive"></a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="./">Sizinle konuşulmasını ister misiniz?</a></li>
+          <li><a href="../navbar-static-top/">KAYIT OL!</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+    <!--/.container-fluid -->
+  </nav>
+  <div class="container">
+    <div class="row profile">
+      <div class="col-md-3">
+        <div class="profile-sidebar">
+          <!-- SIDEBAR USERPIC -->
+          <div class="profile-userpic">
+            <img src="https://pp.vk.me/c629227/v629227530/31f5e/lbT55hCzZeI.jpg" class="img-responsive" alt="">
+          </div>
+          <!-- END SIDEBAR USERPIC -->
+          <!-- SIDEBAR USER TITLE -->
+          <div class="profile-usertitle">
+            <div class="profile-usertitle-name">
+              <p>Umut Özen</p>
+            </div>
+            <div class="profile-usertime">
+              (27.12.2015 tarihinden itibaren 225 kişiyle konuştu) 
+            </div>
+            <div class="profile-bio">
+              <p>Hayat bir gün oda şuan...</p>
+            </div>
+          </div>
+          <div class="profile-userbuttons">
+            <button type="button" class="btn btn-success btn-sm">Takip Et</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="profile-content">
+          <div class="message">
+
+            <ul class="pages">
+              <!-- <form action=""> -->
+              <li class="chat page">
+                <input type="text" class="form-control inputMessage" placeholder="Mesajınızı buraya yazın..." maxlength="600" />
+                <input type="submit">
+              </li>
+              <!-- <li class="login page" style="height: 100%; position: absolute; width: 100%;">
+                <div class="form">
+                  <h3 class="title">What's your nickname?</h3>
+                  <input class="usernameInput" type="text" maxlength="14" />
+                </div>
+              </li> -->
+              <!-- </form> -->
+            </ul>
+
+          </div>
+          <div class="users">
+            <ul class="nav nav-tabs chat page">
+              <!-- <li class="active"><a data-toggle="tab" href="#test1">Anon54545454</a></li> -->
+            </ul>
+            <div class="tab-content">
+              <!-- <div id="test1" class="tab-pane fade in active">
+                <h3>Anon54545454</h3>
+                <p><a href="#">Bu konuşmayı kapat</a></p>
+                <p><a href="#">Bu konuşmayı engelle</a></p>
+                <div class="typing">
+
+                  <div class="chatArea">
+                    <ul class="messages"></ul>
+                  </div>
+
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  function seksekerekmakbule() {
+    $(".closeTab").click(function () {
+      //there are multiple elements which has .closeTab icon so close the tab whose close icon is clicked
+      var tabContentId = $(this).parent().attr("href");
+      $(this).parent().parent().remove(); //remove li of tab
+      $('#myTab a:last').tab('show'); // Select first tab
+      $(tabContentId).remove(); //remove respective tab content
+
+    });
+  }
+</script>
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+<script src="/main.js"></script>
+</html>
